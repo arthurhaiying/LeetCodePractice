@@ -35,7 +35,7 @@ def longestStrChainRec(words: List[str], idx: int, dp: List[int]) -> int:
     """ Find the longest word chain starting from word[idx] """
     if dp[idx] > 0:
         return dp[idx] # check if dp[idx] has been precomputed
-
+        
     word = words[idx]
     sucessors = [] 
     # find all possible successors for w[idx]
